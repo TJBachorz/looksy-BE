@@ -106,3 +106,10 @@ Item.create(
     author: "Nikki Morin",
     authorURL: "https://poly.google.com/user/3XUK2HSb-2H"
 )
+Item.create(
+    name: "Flatscreen TV",
+    gltfsrc: "flatscreen/model.gltf",
+    usdzsrc: "flatscreen/flatscreen.usdz",
+    author: "Alex “SAFFY” Safayan",
+    authorURL: "https://poly.google.com/user/b7jif2AAit5"
+)
