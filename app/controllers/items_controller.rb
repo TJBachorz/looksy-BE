@@ -3,4 +3,8 @@ class ItemsController < ApplicationController
         @items = Item.all
         render json: @items
     end
+
+    def show 
+        @item = Item.find(item[:id])
+    end
 end

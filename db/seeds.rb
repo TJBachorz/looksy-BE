@@ -10,11 +10,11 @@ User.destroy_all
 Item.destroy_all
 
 
-# User.create(
-#     username: "TJB",
-#     email: "TJB@GMAIL.com",
-#     password: "helllo"
-# )
+User.create(
+    username: "TJBachorz",
+    email: "TJBachorz@gmail.com",
+    password: "TJBachorz"
+)
 Item.create(
     name: "Window",
     gltfsrc: "window/window.gltf",
