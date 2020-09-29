@@ -3,7 +3,7 @@ class ApplicationController < ActionController::API
     before_action :authorized
 
     def authorized
-        render json: "Please Log IN" unless logged_in
+        render json: "Please Log In" unless logged_in
     end
 
     def logged_in

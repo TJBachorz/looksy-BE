@@ -9,11 +9,10 @@ Favorite.destroy_all
 User.destroy_all
 Item.destroy_all
 
-
 User.create(
     username: "TJBachorz",
     email: "TJBachorz@gmail.com",
-    password: "TJBachorz"
+    password: "tjbachorz"
 )
 Item.create(
     name: "Window",
