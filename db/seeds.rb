@@ -9,11 +9,6 @@ Favorite.destroy_all
 User.destroy_all
 Item.destroy_all
 
-User.create(
-    username: "TJBachorz",
-    email: "TJBachorz@gmail.com",
-    password: "tjbachorz"
-)
 Item.create(
     name: "Window",
     gltfsrc: "window/window.gltf",
