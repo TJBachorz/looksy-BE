@@ -9,13 +9,13 @@ Favorite.destroy_all
 User.destroy_all
 Item.destroy_all
 
-Item.create(
-    name: "Window",
-    gltfsrc: "window/window.gltf",
-    usdzsrc: "window/window.usdz",
-    author: "Google",
-    authorURL: "https://poly.google.com/view/bwd4gui4RZ4"
-)
+# Item.create(
+#     name: "Window",
+#     gltfsrc: "window/window.gltf",
+#     usdzsrc: "window/window.usdz",
+#     author: "Google",
+#     authorURL: "https://poly.google.com/view/bwd4gui4RZ4"
+# )
 Item.create(
     name: "Red Sofa",
     gltfsrc: "red_sofa/red_sofa.gltf",
