@@ -28,6 +28,8 @@ class ApplicationController < ActionController::API
     end
 
     def secret_key 
-        ENV['SECRET_KEY_BASE']
+        Rails.application.secrets.secret_key_base[0]
     end
+
+    ENV['SECRET_KEY_BASE']
 end
