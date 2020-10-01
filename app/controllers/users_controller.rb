@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     end
 
     def show
-        render json: @user
+        render json: @user, include: [:favorites, :items]
     end
 
     def create 
@@ -44,7 +44,7 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:username, :email, :password)
+        params.require(:user).permit(:username, :email, :password, :image, :bio)
     end
 
     def find_user_by_id
