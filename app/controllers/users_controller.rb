@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     end
 
     def show
-        render json: @user
+        render json: @user, include: [:favorites, :items]
     end
 
     def create 
@@ -34,7 +34,7 @@ class UsersController < ApplicationController
         @user = User.find_by(username: params[:username])
     
         if @user && @user.authenticate(params[:password])
-            @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+            @token = JWT.encode({user_id: @user.id}, ENV['SECRET_KEY_BASE'])
             render json: {user: @user, token: @token}
         else
             render json: {message: "Invalid credentials!"}
@@ -44,7 +44,7 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:username, :email, :password)
+        params.require(:user).permit(:username, :email, :password, :image, :bio)
     end
 
     def find_user_by_id
