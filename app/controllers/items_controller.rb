@@ -6,5 +6,6 @@ class ItemsController < ApplicationController
 
     def show 
         @item = Item.find(item[:id])
+        render json: @item, include: [:favorites]
     end
 end
