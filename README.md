@@ -9,7 +9,7 @@
 * [Technologies](#technologies)
 * [Contact](#contact)
 
-## Intro Video
+## Video Demo
 
 [Check out Looksy!](https://www.youtube.com/watch?v=HPJ6KVPMPac)
 
@@ -41,8 +41,4 @@ NOTE:  Because of the evolving nature of AR technology Looksy may not be optimiz
 
 Author : TJ Bachorz
 
-[Github](https://github.com/TJBachorz)
-
-[Linked-in](https://www.linkedin.com/in/tjbachorz/)
-
-[Email](tjbachorz@gmail.com)
+[Github](https://github.com/TJBachorz) -- [Linked-in](https://www.linkedin.com/in/tjbachorz/) -- [Email](tjbachorz@gmail.com)
