@@ -23,6 +23,7 @@ class UsersController < ApplicationController
 
     def update
         @user.update(user_params)
+        @user.save
         render json: @user
     end
 
